@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>题目描述 | LeetcodeJs</title>
-    <meta name="generator" content="VuePress 1.9.9">
+    <meta name="generator" content="VuePress 1.9.10">
     
     <meta name="description" content="">
     
-    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.e11e5431.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/8.caeaa505.js" as="script"><link rel="prefetch" href="/assets/js/3.39104db2.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.cc34b996.js"><link rel="prefetch" href="/assets/js/9.81c4ed70.js">
-    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.84de220e.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/23.acee12dc.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.11b1ca6a.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.43a9f07f.js"><link rel="prefetch" href="/assets/js/24.43b53ede.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LeetcodeJs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.bigmix.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
@@ -21,25 +21,35 @@
  * @return {number}
  */</span>
 <span class="token keyword">var</span> <span class="token function-variable function">lengthOfLongestSubstring</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">let</span> maxLength <span class="token operator">=</span> <span class="token number">0</span>
-  <span class="token keyword">let</span> currentStr <span class="token operator">=</span> <span class="token string">''</span>
-  <span class="token keyword">let</span> lastIndex <span class="token operator">=</span> <span class="token number">0</span>
-  <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">while</span> <span class="token punctuation">(</span>currentStr<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>lastIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      currentStr <span class="token operator">+=</span> s<span class="token punctuation">.</span><span class="token function">substr</span><span class="token punctuation">(</span>lastIndex<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
-      lastIndex <span class="token operator">++</span>
+    <span class="token comment">// left 左边字符的位置</span>
+    <span class="token comment">// right 右边字符的位置</span>
+    <span class="token comment">// right + 1 下一个比较的字符</span>
+    <span class="token comment">// curStr = s.slice(left, right + 1)</span>
+    <span class="token keyword">let</span> max <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">let</span> curStr <span class="token operator">=</span> s<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+    <span class="token keyword">let</span> leftIdx <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">let</span> rightIdx <span class="token operator">=</span> <span class="token number">0</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>rightIdx <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 下一个是重复的</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>curStr<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>rightIdx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            leftIdx <span class="token operator">++</span><span class="token punctuation">;</span>
+            curStr <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>leftIdx<span class="token punctuation">,</span> rightIdx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            rightIdx <span class="token operator">++</span><span class="token punctuation">;</span>
+            curStr <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>leftIdx<span class="token punctuation">,</span> rightIdx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+            max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>max<span class="token punctuation">,</span> curStr<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
-    maxLength <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>currentStr<span class="token punctuation">.</span>length<span class="token punctuation">,</span> maxLength<span class="token punctuation">)</span>
-    currentStr <span class="token operator">=</span> currentStr<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span>
-  <span class="token keyword">return</span> maxLength
+    <span class="token keyword">return</span> max
 <span class="token punctuation">}</span><span class="token punctuation">;</span>
-</code></pre></div><ul><li>问题分析
-<ul><li>从第一个字符开始查找，以该字符为首字符的最长不重复字符串，记录下当前的字符<code>currentStr</code>以及当前字符的末尾字符对应的位置<code>lastIndex</code>，并将储存找到字符的最长长度<code>maxLength</code>赋值为当前字符长度。</li> <li>出现的不重复字符被终止，说明下一个字符和当前字符串有重叠，我们删除当前字符串的第一个字符，继续查找。</li> <li><s>写到这里感觉这道题有点双指针的感觉，寻找两个指针的中间存在的字符串最长。百度了一下，原来是滑动窗口</s></li> <li>该题属于滑动窗口的解法，这里大致思路就是两个位置，一个<code>left</code>，一个<code>right</code>。位于<code>left</code>和<code>right</code>中间字符串还属于不重复字符串时，尝试<code>right++</code>，如果重复了，<code>left++</code>，继续尝试<code>right++</code>，直到到达终点。</li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+</code></pre></div><ul><li>问题思路
+<ul><li>首先题目是要获取字串，而且肯定是要通过遍历来查找的，所以首先定下<code>leftIdx</code>和<code>rightIdx</code>作为当前遍历的左右位置，当前的无重复字符串定为<code>curStr</code></li> <li><code>leftIdx</code>和<code>rightIdx</code>从字符串的最左侧开始，先向右挪动<code>rightIdx</code>，相当于吸纳新的字符到当前字符串中。自然，在挪动之前需要判断新的字符是否已经存在于字符串中
+<ul><li>如果是不存在的字符，直接吸纳即可，吸纳后更新最大值</li> <li>如果是存在的字符，将当前的字符串<code>curStr</code>的左侧字符逐个移除，每次移除后再尝试吸纳右侧的字符看能否组成无重复字符串。</li></ul></li> <li>明确边界
+<ul><li>首先<code>left</code>是当前字符串的左侧索引，<code>right</code>是右侧索引。所以<code>curStr = s.slice(leftIdx, rightIdx + 1)</code></li> <li>整个遍历的前置条件为<code>rightIdx &lt; s.length</code>，否则<code>rightIdx</code>超出字符长度</li> <li>获取下一个需要吸纳的字符串<code>s[rightIdx + 1]</code></li> <li>初始化条件：起始从第一个字符开始，所以<code>leftIdx</code>和<code>rightIdx</code>都为<code>0</code>，<code>curStr</code>直接取第一个字符。</li></ul></li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
       ←
       <a href="/01.热身小菜/1-两数之和.html" class="prev">
         1-两数之和
       </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.e11e5431.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/8.caeaa505.js" defer></script>
+    <script src="/assets/js/app.84de220e.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/23.acee12dc.js" defer></script>
   </body>
 </html>
