@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{306:function(t,s,n){"use strict";n.r(s);var o=n(14),e=Object(o.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("blockquote",[t("p",[this._v("多动脑")]),this._v(" "),t("p",[this._v("思考 what why and how")])])])}),[],!1,null,null,null);s.default=e.exports}}]);
