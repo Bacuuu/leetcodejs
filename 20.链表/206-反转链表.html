@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>题目描述 | LeetcodeJs</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f3dca9f.css" as="style"><link rel="preload" href="/assets/js/app.3601fd6f.js" as="script"><link rel="preload" href="/assets/js/2.3dc1b8de.js" as="script"><link rel="preload" href="/assets/js/1.7f771cfb.js" as="script"><link rel="preload" href="/assets/js/25.99c0228d.js" as="script"><link rel="prefetch" href="/assets/js/10.23a1f579.js"><link rel="prefetch" href="/assets/js/11.c389195a.js"><link rel="prefetch" href="/assets/js/12.1d996921.js"><link rel="prefetch" href="/assets/js/13.4d4410c4.js"><link rel="prefetch" href="/assets/js/14.37ef2a72.js"><link rel="prefetch" href="/assets/js/15.5542c093.js"><link rel="prefetch" href="/assets/js/16.d48fd1ce.js"><link rel="prefetch" href="/assets/js/17.bd8d538c.js"><link rel="prefetch" href="/assets/js/18.6d3b94c1.js"><link rel="prefetch" href="/assets/js/19.eb35cfee.js"><link rel="prefetch" href="/assets/js/20.c11ec329.js"><link rel="prefetch" href="/assets/js/21.db1b5d88.js"><link rel="prefetch" href="/assets/js/22.6b5c506b.js"><link rel="prefetch" href="/assets/js/23.ffb78d2e.js"><link rel="prefetch" href="/assets/js/24.ec78a280.js"><link rel="prefetch" href="/assets/js/26.e0c275a4.js"><link rel="prefetch" href="/assets/js/27.2bc50dc8.js"><link rel="prefetch" href="/assets/js/3.5322f14a.js"><link rel="prefetch" href="/assets/js/4.84e1e480.js"><link rel="prefetch" href="/assets/js/5.f0541060.js"><link rel="prefetch" href="/assets/js/6.dfb06aa0.js"><link rel="prefetch" href="/assets/js/7.7551a9fb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.5e19b665.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f3dca9f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">LeetcodeJs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://www.bigmix.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主页
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://www.bigmix.cn" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  主页
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">根目录</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>滑动窗口</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>链表</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/20.链表/2-两数相加.html" class="sidebar-link">2-两数相加</a></li><li><a href="/20.链表/206-反转链表.html" class="active sidebar-link">206-反转链表</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/20.链表/206-反转链表.html#题目描述" class="sidebar-link">题目描述</a></li><li class="sidebar-sub-header"><a href="/20.链表/206-反转链表.html#分类" class="sidebar-link">分类</a></li><li class="sidebar-sub-header"><a href="/20.链表/206-反转链表.html#思路" class="sidebar-link">思路</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>无分类</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="题目描述"><a href="#题目描述" class="header-anchor">#</a> 题目描述</h2> <blockquote><p><a href="https://leetcode.cn/problems/reverse-linked-list/" target="_blank" rel="noopener noreferrer">反转链表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>题目简述</p> <p>给你单链表的头节点 <code>head</code> ，请你反转链表，并返回反转后的链表。</p> <p>示例1:</p> <div class="language- extra-class"><pre class="language-text"><code>输入：head = [1,2,3,4,5]
+输出：[5,4,3,2,1]
+</code></pre></div><p>示例2:</p> <div class="language- extra-class"><pre class="language-text"><code>输入：head = [1,2]
+输出：[2,1]
+</code></pre></div></blockquote> <h2 id="分类"><a href="#分类" class="header-anchor">#</a> 分类</h2> <p><code>简单</code> <code>链表</code></p> <h2 id="思路"><a href="#思路" class="header-anchor">#</a> 思路</h2> <h4 id="思路1"><a href="#思路1" class="header-anchor">#</a> 思路1</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverseList</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 先读下一个，再将指向反向</span>
+  <span class="token comment">// curNode -&gt; next -&gt; _next</span>
+  <span class="token keyword">let</span> curNode <span class="token operator">=</span> head
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>curNode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> curNode
+  <span class="token punctuation">}</span>
+  <span class="token keyword">let</span> next <span class="token operator">=</span> head<span class="token punctuation">.</span>next
+  head<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token keyword">null</span>
+  <span class="token keyword">while</span><span class="token punctuation">(</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> _next <span class="token operator">=</span> next<span class="token punctuation">.</span>next
+    next<span class="token punctuation">.</span>next <span class="token operator">=</span> curNode
+    curNode <span class="token operator">=</span> next
+    next <span class="token operator">=</span> _next
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> curNode
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>问题思路
+<ul><li>题目的意思就是将链表的节点指向反向，我们先用最小的例子来看思路是怎样的
+<ul><li>假设有个链表为<code>A -&gt; B -&gt; C</code>，我们只能从<code>A</code>节点入手</li> <li>假设我们一次只处理两个节点的关系，<code>A</code>和<code>B</code>。我们可以轻易的转换为<code>A &lt;- B</code>，但是当进行下一步时，我们已经无法找到<code>C</code>节点。</li> <li>所以我们一次要处理三个节点。
+<ul><li>先将三个节点都记录下来（<code>curNode(A)</code>、<code>next(B)</code>、<code>_next(C)</code>）。</li> <li>完成<code>A &lt;- B</code>的关系转换</li> <li>将<code>curNode</code>移动到<code>B</code>，<code>next</code>移动到<code>C</code></li></ul></li> <li>边界处理，当<code>next</code>为<code>null</code>时说明当前节点<code>(curNode)</code>已经为最后一个节点</li> <li>还需要单独处理指针头为空的情况，否则取其下一个节点会报错。</li></ul></li></ul></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/20.链表/2-两数相加.html" class="prev">
+        2-两数相加
+      </a></span> <span class="next"><a href="/99.无分类/1-两数之和.html">
+        1-两数之和
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.3601fd6f.js" defer></script><script src="/assets/js/2.3dc1b8de.js" defer></script><script src="/assets/js/1.7f771cfb.js" defer></script><script src="/assets/js/25.99c0228d.js" defer></script>
+  </body>
+</html>
